@@ -22,7 +22,7 @@ var MyComponent = React.createClass({
   mixins: [ReactMeteor.Mixin],
 
   // Make sure your component implements this method.
-  getMeteorState () {
+  getMeteorState() {
     return {
       foo: Session.get("foo"),
       ...
