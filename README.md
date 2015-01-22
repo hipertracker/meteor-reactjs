@@ -38,7 +38,6 @@ performed by `getMeteorState` so that the component can be automatically
 re-rendered whenever the data changes.
 
 You can find some examples at [hipertracker/meteor-reactjs-examples](https://github.com/hipertracker/meteor-reactjs-examples).
-meteor
 
 ## Credits
 
