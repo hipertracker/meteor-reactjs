@@ -4,8 +4,8 @@ var reactAddonsVersion = '0.9.0';
 
 Package.describe({
     name: 'hipertracker:reactjs',
-    summary: 'ReactJS & JSX (--harmony) for Meteor',
-    version: '0.0.4',
+    summary: 'ReactJS + addons + JSX (--harmony) for Meteor',
+    version: '0.0.5',
     git: 'https://github.com/hipertracker/meteor-reactjs.git'
 });
 
