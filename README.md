@@ -1,6 +1,6 @@
 # meteor-reactjs
 
-[Meteor](http://meteor.com) smart package integrating [React](http://facebook.github.io/react/) for both client and the server, to complement or replace the default [Blaze](https://www.meteor.com/blaze) templating system.
+[Meteor](http://meteor.com) smart package integrating [React](http://facebook.github.io/react/) for both client and the server, to complement or replace the default [Blaze](https://www.meteor.com/blaze) templating system. [React.addons](http://facebook.github.io/react/docs/addons.html) are enabled. [JSX](http://facebook.github.io/react/docs/jsx-in-depth.html) is using ES6 transforms (--harmony) as well.
 
 ## Usage
 
