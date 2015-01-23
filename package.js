@@ -5,7 +5,7 @@ var reactAddonsVersion = '0.9.0';
 Package.describe({
     name: 'hipertracker:reactjs',
     summary: 'ReactJS + addons + JSX (--harmony) for Meteor',
-    version: '0.0.6',
+    version: '0.0.7',
     git: 'https://github.com/hipertracker/meteor-reactjs.git'
 });
 
@@ -38,7 +38,6 @@ Package.on_use(function (api) {
     // On the server, we use the modules that ship with react.
     api.add_files('src/require-packages.js', 'server');
     api.export('React', 'server');
-    api.export('Reflux', 'server');
 
     // Meteor-enabled components should include this mixin via
     // React.createClass({ mixins: [ReactMeteor.Mixin], ... }).
