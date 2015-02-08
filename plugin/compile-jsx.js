@@ -7,7 +7,7 @@ var handler = function (compileStep) {
     compileStep.addJavaScript({
         path: outputFile,
         sourcePath: compileStep.inputPath,
-        data: reactTools.transform(source, {harmony: true})
+        data: reactTools.transform(source, {harmony: true, sourceMap: true})
     });
 };
 
