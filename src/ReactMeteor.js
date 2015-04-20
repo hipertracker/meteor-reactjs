@@ -1,6 +1,8 @@
 var ReactMeteorMixin = {
     _handleMeteorChange: function () {
-        this.setState(this.getMeteorState());
+        if( this.getMeteorState !== undefined ){
+            this.setState(this.getMeteorState());
+        }
     },
 
     _cancelComputation: function () {
