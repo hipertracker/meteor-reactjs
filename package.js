@@ -2,10 +2,10 @@ var meteorVersion = '1.1.0.2',
   reactVersion = '0.13.2'
 
 Package.describe({
-  name: 'rkstar:reactjs',
+  name: 'hipertracker:reactjs',
   summary: 'ReactJS + addons + JSX (--harmony) for Meteor',
-  version: '0.0.9',
-  git: 'https://github.com/rkstar/meteor-reactjs'
+  version: '0.0.10',
+  git: 'https://github.com/hipertracker/meteor-reactjs'
 })
 
 Package._transitional_registerBuildPlugin({
@@ -23,8 +23,8 @@ Package._transitional_registerBuildPlugin({
 
 Package.onTest(function (api) {
   api.use('tinytest')
-  api.use('rkstar:reactjs')
-  api.addFiles('rkstar:reactjs-tests.js')
+  api.use('hipertracker:reactjs')
+  api.addFiles('hipertracker:reactjs-tests.js')
 })
 
 
