@@ -12,7 +12,7 @@ Package._transitional_registerBuildPlugin({
     name: 'compileJSX',
     use: [],
     sources: [
-        'plugin/compile-jsx.js'
+        'plugin/compile_jsx.js'
     ],
     npmDependencies: {
         'react': reactVersion,
@@ -35,7 +35,7 @@ Package.onUse(function (api) {
     api.addFiles('vendor/react-' + reactVersion + '.js', 'client');
 
     // On the server, we use the modules that ship with react.
-    api.addFiles('src/require-packages.js', 'server');
+    api.addFiles('src/require_packages.js', 'server');
     api.export('React', 'server');
 
     // Meteor-enabled components should include this mixin via
