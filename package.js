@@ -21,11 +21,11 @@ Package._transitional_registerBuildPlugin({
 });
 
 
-Package.onTest(function (api) {
-    api.use('tinytest');
-    api.use('hipertracker:reactjs');
-    api.addFiles('hipertracker:reactjs-tests.js');
-});
+//Package.onTest(function (api) {
+//    api.use('tinytest');
+//    api.use('hipertracker:reactjs');
+//    api.addFiles('hipertracker:reactjs-tests.js');
+//});
 
 
 Package.onUse(function (api) {
