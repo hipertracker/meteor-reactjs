@@ -28,19 +28,19 @@ Package.onTest(function (api) {
 });
 
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
     api.versionsFrom(meteorVersion);
 
     // Standard distribution of React, same version as react-tools.
-    api.add_files('vendor/react-' + reactVersion + '.js', 'client');
+    api.addFiles('vendor/react-' + reactVersion + '.js', 'client');
 
     // On the server, we use the modules that ship with react.
-    api.add_files('src/require-packages.js', 'server');
+    api.addFiles('src/require-packages.js', 'server');
     api.export('React', 'server');
 
     // Meteor-enabled components should include this mixin via
     // React.createClass({ mixins: [ReactMeteor.Mixin], ... }).
-    api.add_files('src/ReactMeteor.js', ['server', 'client']);
+    api.addFiles('src/ReactMeteor.js', ['server', 'client']);
     api.export('ReactMeteor', ['server', 'client'])
 });
 
